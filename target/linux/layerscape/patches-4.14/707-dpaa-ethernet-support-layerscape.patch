@@ -1034,7 +1034,7 @@ Signed-off-by: Zhao Qiang <qiang.zhao@nxp.com>
 +	dev_kfree_skb(skb);
 +	return nskb;
 +
-++err:
++err:
 +	if (nskb)
 +		dev_kfree_skb(nskb);
 +	put_page(npage);
