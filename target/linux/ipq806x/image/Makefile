@@ -108,6 +108,17 @@ define Device/compex_wpq864
 endef
 TARGET_DEVICES += compex_wpq864
 
+define Device/compex_wpq865
+	$(call Device/FitImage)
+	$(call Device/UbiFit)
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	DEVICE_DTS := qcom-ipq8065-wpq865
+	DEVICE_TITLE := Compex WPQ865
+	DEVICE_PACKAGES := kmod-gpio-beeper
+endef
+TARGET_DEVICES += compex_wpq865
+
 define Device/linksys_ea8500
 	$(call Device/LegacyImage)
 	DEVICE_VENDOR := Linksys

@@ -27,6 +27,10 @@ qcom,ipq8064-ap161)
 	ucidef_add_switch "switch0" \
 		"0:lan" "1:lan" "2:lan" "3u@eth1" "6:wan" "4u@eth0"
 	;;
+compex,wpq865)
+	ucidef_add_switch "switch0" \
+		"1:lan" "2:lan" "3:lan" "4:lan" "0@eth0" "5:wan" "6@eth1"
+	;;
 linksys,ea8500)
 	hw_mac_addr=$(mtd_get_mac_ascii devinfo hw_mac_addr)
 	ucidef_add_switch "switch0" \
